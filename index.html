@@ -1,0 +1,141 @@
+<html>
+<head>
+    <title>Sample App</title>
+    <link rel="shortcut icon" href="http://s3.amazonaws.com/libapps/accounts/114989/images/colorful-1974699_1920.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style >
+        body{
+            text-align: center;
+            margin:0;
+            padding:0;
+            background-color: #e6e6e6;
+        }
+        #root{
+            width: 100%;
+            margin:0 auto;
+        }
+       #root h1{
+        	font-weight: bold;
+        }
+        .containerLayout{
+        	display: flex;
+        	flex-direction: column;
+        	justify-content: space-around;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            background-color: white;
+            padding: 2rem 0;
+        }
+        .imgs{
+            width: 50px;
+            max-width: 100%;
+        }
+        table{
+            margin:0 auto;
+
+        }
+        td,th{
+            border: 1px solid rgba(0,0,0,0.4);
+            padding: 10px;
+        }
+        .searchInput,
+        .rangeInput{
+            margin-left: 1rem;
+        }
+        .searchInput{
+            margin-right: 1rem;
+        }
+        label{
+            display: inline-flex;
+            margin-top: 1rem;
+            margin-right: .5rem;
+        }
+        .spanRange{
+            margin-left: 1rem;
+        }
+        .containerTabel{
+            max-width: 90%;
+        }
+        .chackBox {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .chackBox label input{
+            margin-left: .6rem;
+        }
+        .filterContainer{
+            padding: 1rem;
+            border: 1px solid rgba(0,0,0,0.4);
+        }
+        input[type=search] {
+            max-width: 70%;
+        }
+        .rangeSpan{
+            width: 100%;
+        }
+        .containerCountry{
+
+        }
+        .card{
+        	background-color: white;
+    		box-shadow: 0 1px 8px rgba(0,0,0,.5), 0 1px 8px rgba(0,0,0,.8);
+        }
+        .card-image{
+        	position: relative;
+		    
+	 	    margin: 0 auto;
+        }
+        .card-image img{
+        	width: 300px;
+        }
+        .card-title{
+    	    position: absolute;
+		    bottom: 2px;
+		    left: 5px;
+		    font-size: 2rem;
+		    font-weight: bold;
+		    color:black;
+        }
+        .card-content{
+        	max-width: 300px;
+    		margin: 0 auto;
+    		padding: 3rem;
+        }
+        .card-content ul{
+    		padding: 0;
+        }
+        .card-content ul li{
+        	list-style: none;
+        	text-align: left;
+        }
+        .card-content ul li span{
+        	font-weight: bold;
+        }
+        .contentEmpty{
+        	display: none;
+        }
+        .wrapTable{
+            margin: 2rem 0 3rem;
+            max-height: 60vh;
+            overflow: auto;
+        }
+        @media (min-width:1000px ){
+            .containerTabel {
+                max-width: 65%;
+            }
+            .container {
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id='root'></div>
+    <script src="static/bundle.js"></script>
+</body>
+</html>
